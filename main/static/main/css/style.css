@@ -1,0 +1,324 @@
+/* baloo-2-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/baloo-2-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* baloo-2-800 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Baloo 2';
+    font-style: normal;
+    font-weight: 800;
+    src: url('../fonts/baloo-2-v21-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  /* lato-regular - latin */
+  @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* lato-700 - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+    /* lato-900 - latin */
+    @font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 900;
+      src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    }
+  
+    *,*::before, *::after{
+      box-sizing: inherit;
+    }
+  
+    body{
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: normal;
+      color: #102746;
+      margin: 0;
+    }
+  
+    .wrapper{
+      max-width: 1060px;
+      margin: 0 auto;
+    }
+  
+    .header{
+      background-color: #161617CC;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  
+    .header_wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-end;
+      justify-content: space-between;
+      /*padding-top: ; */
+    }
+  
+    .header_list{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .header_item{
+      margin-right: 35.7px;
+    }
+  
+    .header_item:last-child{
+      margin-right: 0;
+    }
+  
+    .header_link{
+      font-size: 20px;
+      line-height: 24px;
+      color: white;
+      text-decoration: none;
+    }
+    li {
+      list-style-type: none; /*Убирает точку*/
+    }
+  
+  
+    .header_link:hover, .header_link:focus, .header_link:active {
+      opacity: .75;
+    }
+  
+    .intro{
+      height: 100vh;
+      background: url(../images/Phones/Figure.png) no-repeat center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0; /* Прикрепляет background image к header */
+      width: 100%;
+      margin: 0;
+    }
+  
+    .intro_title{
+      padding-top: 95px;
+      text-align: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: 45.75px;
+      height: 67px;
+      color: #1D1D1F;
+      letter-spacing: -0.20px;
+      line-height: 60px;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 1px;
+    }
+  
+    .intro_subtitle{
+      padding-top: -35px;
+      text-align: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      color: #1D1D1F;
+      height: 67px;
+      font-size: 24.609px;
+      margin-bottom: 20px;
+    }
+  
+    .intro_susubtitle{
+      margin-top: -51px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-align: center;
+      color: #72727e;
+      font-size: 24.391px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      width: 100%;
+      display: block;
+      font-style: normal;
+      margin-bottom: 10px;
+    }
+  
+    .intro_offer{
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-align: center;
+      color: #6e6e73;
+      font-size: 18.38px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      width: 100%;
+      display: block;
+      font-style: normal;
+      opacity: 0.7;
+      font-weight: 400;
+      letter-spacing: 0em;
+      margin-bottom: 10px;
+    }
+  
+    .second_intro{
+      display: block;
+      height: 100vh;
+      background: url(../images/Phones/2Figure.png) no-repeat center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0; /* Прикрепляет background image к header */
+      width: 100%;
+      margin: 0;
+      margin-top: -200px;
+    }
+    
+    .tv{
+      margin-top: 87px;
+      margin-left: 780px;
+    }
+  
+    .monarch{
+      margin-top: 300px;
+      margin-left: 715px;
+      width: 210px;
+    }
+  
+    .monarch_text{
+      font-size: 18.5px;
+      color: #F5F5F7;
+      text-align: center;
+      margin-top: 10px;
+      margin-left: 0px;
+      flex-shrink: 0;
+      opacity: .8;
+    }
+  
+    .stream{
+      color: #F5F5F7 ;
+      font-size: 14px;
+      text-align: center;
+      margin-top: -10px;
+      margin-left: 0px;
+      flex-shrink: 0;
+    }
+  
+   
+  
+    .third_intro{
+      display: block;
+      height: 100vh;
+      background: url(../images/Phones/iphone.png) no-repeat center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 0 0; /* Прикрепляет background image к header */
+      width: 100%;
+      margin: 0;
+      margin-top: -200px;
+    }
+  
+    .iphone_text{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #102746;
+      display: block;
+      font-size: 51.297px;
+      margin-top: 30px;
+      line-height: 152px;
+      height: 10px;
+      border-radius: 5px;
+      line-height: 2.3;
+    }
+  
+    .subtitle_iphone{
+      color: #F5F5F7;
+      text-align: center;
+      font-size: 21.953px;
+      font-style: normal;
+      line-height: 11px; /* 129.419% */
+      letter-spacing: 0.112px;
+      opacity: 0.8;
+      user-select: none;
+      border-radius: 5px;
+      line-height: .1;
+    }
+  
+    button{
+      color: #2997FF;
+      display: flex;
+  
+      align-items: center;
+  
+      outline: none;
+      border: none;
+  
+      font-size: 18.375px;
+      font-weight: 400;
+      
+  
+      left: 0;
+      margin-left: 670px;
+      background-color: transparent;
+    }
+  
+    .iphone_button{
+      color: #082744;
+      display: flex;
+      align-items: center;
+      border-radius: 55px;
+      font-size: 18.375px;
+      font-weight: 400;
+      line-height: 29px; /* 157.823% */
+      margin-top: -50px;
+      margin-left: 900px;
+      background-color: transparent;
+    }
+  
+    .watch_intro{
+      background: url(../images/Phones/watch_phone.png) no-repeat;
+      background-size: 100vh Auto;
+      position: relative;
+      background-position: top left;
+      width: 1680px;
+      height: 100vh;
+      margin-top: -833px;
+    }
+  
+    .macbook_intro{
+      background: url(../images/Phones/macbook.png) no-repeat;
+      background-size: 100vh auto;
+      position: relative;
+      background-position: top right;
+      width: 1680px;
+      height: 100vh;
+      margin-top: -833px;
+    }
+  
+    .wonder_intro{
+      background: url(../images/Phones/wonder.png) no-repeat;
+      background-size: 100vh auto;
+      position: relative;
+      background-position: bottom left;
+      width: 1680px;
+      height: 100vh;
+      margin-top: -625px;
+    }
+  
+    .thirst_iphone_intro{
+      background: url(../images/Phones/thirst_iphone.png) no-repeat;
+      background-size: 100vh auto;
+      position: relative;
+      background-position: bottom right;
+      width: 1680px;
+      height: 100vh;
+      margin-top: -832px;
+    }
+  

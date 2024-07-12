@@ -1,0 +1,146 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block head %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+{% endblock %}
+
+{% block index_style %} 
+<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+{% endblock %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<header class="header">
+    <div class="wrapper">
+        <div class="header_wrapper">
+            <div class="header_logo">
+                <a href="/" class="header_logo_link">
+                    <img src="/static/main/images/logo.png" alt="Apple" class="header_logo_pic">
+                </a>
+            </div>
+            <nav>
+                <ul class="header_list">
+                    <li class="header_item">
+                        <a href="#!" class="header_link">store</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#!" class="header_link">mac</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="#!" class="header_link">ipad</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="{% url 'register' %}" class="header_link">register</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="{% url 'login' %}" class="header_link">login</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="{% url 'create' %}" class="header_link">Sign in</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    </div>
+</header>
+
+<main class="main">
+    <section class="intro">
+        <div class="wrapper">
+            <h1 class="intro_title">
+                The Apple Store Shopping Event
+            </h1>
+            <p class="intro_subtitle">
+                Get an Apple Gift Card up to $200 
+            </p>
+            <h2 class="intro_susubtitle">
+                with your eligible purchase.
+            </h2>
+            <h3 class="intro_offer">
+                Offer starts 11.24
+            </h3>
+            
+        </div>
+    </section>
+</main>
+<main>
+    <section class="second_intro">
+        <div class="second_wrapper">
+            <img src="/static/main/images/headingtv.png" alt="headtv" class="tv">    
+            <img src="/static/main/images/monarch.png" alt="monarch" class="monarch">
+            <h4 class="monarch_text">
+                Some secrets cannot be contained.
+            </h4>
+            <h5 class="stream">
+                Stream the new series
+            </h5>
+        </div>
+    </section>
+</main>
+
+<main class="iphone">
+    <section class="third_intro">
+        <div class="third_wrapper">
+            <h9 class="iphone_text">
+                
+            </h9>
+            <h6 class="subtitle_iphone">
+                Titanium. So strong. So light. So Pro.
+            </h6>
+            <button type="button">Learn More</button>
+            <button type="button" class="iphone_button">buy</button>
+        </div>
+    </section>
+</main>
+
+<main>
+    <section class="watch_intro">
+        <div class="watch_wrapper">
+
+        </div>
+    </section>
+</main>
+
+<main>
+    <section class="macbook_intro">
+        <div class="macbook_wrapper">
+
+        </div>
+    </section>
+</main>
+
+<main>
+    <section class="wonder_intro">
+        <div class="woder_wrapper">
+
+        </div>
+    </section>
+</main>
+
+<main>
+    <section class="thirst_iphone_intro">
+        <div class="iphone_intro">
+            
+        </div>
+    </section>
+</main>
+<!--
+{% if tasks %}
+    {% for el in tasks %}
+        <div class="alert">
+            <h8>{{ el.title }}</h8>
+            <p>{{ el.title }}</p>
+        </div>
+    {% endfor %}
+{% else %}
+<p>У нас нет записей</p>
+{% endif %}
+{% endblock %}
+-->
